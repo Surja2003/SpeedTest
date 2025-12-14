@@ -1,0 +1,32 @@
+[
+  { "name": "Cloudflare Anycast (Global)", "region": "GLOBAL", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Cloudflare Anycast (APAC)", "region": "APAC", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Cloudflare Anycast (NA)", "region": "NA", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Cloudflare Anycast (EU)", "region": "EU", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Hetzner (Germany)", "region": "EU", "type": "cdn", "url": "https://speed.hetzner.de/10MB.bin" },
+  { "name": "Bouygues (France)", "region": "EU", "type": "cdn", "url": "https://bouygues.testdebit.info/10M.iso" },
+  { "name": "OVH (France)", "region": "EU", "type": "cdn", "url": "https://proof.ovh.net/files/10Mb.dat" },
+  
+  { "name": "Cloudflare Anycast (IN)", "region": "IN", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Cloudflare Anycast (Mumbai)", "region": "IN", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Cloudflare Anycast (Singapore)", "region": "APAC", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  
+  { "name": "Azure Edge (Singapore)", "region": "APAC", "type": "cdn", "url": "https://az764295.vo.msecnd.net/stable/README.md" },
+  { "name": "Azure Edge (India)", "region": "IN", "type": "cdn", "url": "https://az764295.vo.msecnd.net/stable/ThirdPartyNotices.txt" },
+  { "name": "Regional Mirror (Kolkata)",   "region": "IN-KOLKATA",   "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Bardhaman)", "region": "IN-BARDHAMAN", "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Sikkim)",    "region": "IN-SIKKIM",    "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Mumbai)",    "region": "IN-MUMBAI",    "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Assam)",     "region": "IN-ASSAM",     "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Delhi)",     "region": "IN-DELHI",     "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" },
+  { "name": "Regional Mirror (Chennai)",   "region": "IN-CHENNAI",   "type": "cdn", "url": "https://speed.cloudflare.com/__down?bytes=10485760" }
+  ,
+  { "name": "Airtel (India)",        "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Airtel test file URL when CORS confirmed" },
+  { "name": "Jio (India)",           "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Jio test file URL when CORS confirmed" },
+  { "name": "BSNL (India)",          "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add BSNL test file URL when CORS confirmed" },
+  { "name": "Vodafone Idea (India)", "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Vi test file URL when CORS confirmed" },
+  { "name": "ACT Fibernet (India)", "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add ACT file URL when CORS confirmed" },
+  { "name": "Tata Play Fiber (India)", "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Tata Play Fiber URL when CORS confirmed" },
+  { "name": "Hathway (India)",       "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Hathway URL when CORS confirmed" },
+  { "name": "Excitel (India)",       "region": "IN", "type": "isp", "url": "", "enabled": false, "note": "Add Excitel URL when CORS confirmed" }
+]

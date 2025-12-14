@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy - Speed Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/theme.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Privacy Policy</h1>
+    <p class="subtitle">We keep things simple and transparent.</p>
+
+    <div class="card">
+      <h2>What We Collect</h2>
+      <ul class="list">
+        <li><strong>IP address:</strong> Used transiently to determine approximate location and nearest test server; not stored long-term.</li>
+        <li><strong>Test metrics:</strong> Download speed, upload speed, ping, jitter. Aggregated to improve accuracy; not tied to personally identifiable information.</li>
+        <li><strong>Browser hints:</strong> Connection type (<code>navigator.connection.effectiveType</code>) when available.</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Data Usage</h2>
+        <p>Large amounts of data may be transferred (hundreds of MB on fast connections) to assess throughput. If you are on a metered or mobile data plan, consider skipping or limiting tests.</p>
+      </div>
+      <div class="card">
+        <h2>Retention</h2>
+        <p>Metrics are kept only in-memory for your current session and discarded afterward unless explicitly opted-in for analytics. If platform analytics (e.g., Vercel) are enabled, they receive standard web request logs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Third Parties</h2>
+      <p>Public CDN endpoints may be used for download tests (e.g., Hetzner, Cloudflare). Those providers may log standard access details (IP, user agent).</p>
+    </div>
+
+    <div class="card">
+      <h2>Your Choices</h2>
+      <ul class="list">
+        <li>Close the page to stop any ongoing transfer.</li>
+        <li>Disable CDN mode by removing the <code>VITE_CDN_MODE</code> environment variable in future builds.</li>
+      </ul>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Speed Test · <a href="/why-results-vary.html">Why results may vary</a></footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

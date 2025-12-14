@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internet Speed Test</h1>
+        <div id="results">
+            <p>Download Speed: <span id="download-speed">0</span> Mbps</p>
+            <p>Upload Speed: <span id="upload-speed">0</span> Mbps</p>
+            <p>Ping: <span id="ping">0</span> ms</p>
+            <p>Latency: <span id="latency">0</span> ms</p>
+            <p>Stability: <span id="stability">0</span></p>
+        </div>
+        <button id="start-test">Start Test</button>
+    </div>
+    <script type="module">
+        import { measureDownloadSpeed, measureUploadSpeed, measurePing, measureStability } from '../src/scripts/speedTest.js';
+
+        document.getElementById('start-test').addEventListener('click', async () => {
+            const button = document.getElementById('start-test');
+            button.disabled = true;
+            button.textContent = 'Testing...';
+
+            try {
+                const downloadSpeed = await measureDownloadSpeed();
+                document.getElementById('download-speed').textContent = downloadSpeed.toFixed(2);
+
+                const uploadSpeed = await measureUploadSpeed();
+                document.getElementById('upload-speed').textContent = uploadSpeed.toFixed(2);
+
+                const ping = await measurePing();
+                document.getElementById('ping').textContent = ping;
+                document.getElementById('latency').textContent = ping;
+
+                const stability = await measureStability();
+                document.getElementById('stability').textContent = stability.toFixed(2);
+            } catch (error) {
+                console.error('Error running speed test:', error);
+                alert('Speed test failed. Check console for details.');
+            }
+
+            button.disabled = false;
+            button.textContent = 'Start Test';
+        });
+    </script>
+</body>
+</html>

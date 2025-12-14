@@ -1,0 +1,30 @@
+{
+  "name": "speed-test-app",
+  "version": "1.0.0",
+  "description": "A web application to test internet connection speed including download speed, upload speed, ping, latency, and stability.",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client"
+  },
+  "keywords": [
+    "speed test",
+    "internet",
+    "connection",
+    "latency",
+    "download",
+    "upload"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0"
+  }
+}

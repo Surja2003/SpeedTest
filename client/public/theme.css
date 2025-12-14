@@ -1,0 +1,32 @@
+
+/* Shared minimal theme to mirror app's dark gradient and cards */
+:root{
+  --bg-start:#0f172a; /* slate-900 */
+  --bg-mid:#1e293b;   /* slate-800 */
+  --bg-end:#0f172a;   /* slate-900 */
+  --text:#e5e7eb;     /* gray-200 */
+  --muted:#94a3b8;    /* slate-400 */
+  --accent:#38bdf8;   /* sky-400 */
+  --border:rgba(255,255,255,0.12);
+  --card-bg:rgba(255,255,255,0.05);
+  --shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%; background: linear-gradient(135deg,var(--bg-start),var(--bg-mid),var(--bg-end)); color:var(--text);}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: none;
+  color:var(--text);
+}
+.container{max-width:960px;margin:0 auto;padding:40px 20px}
+.title{font-size:2.2rem;margin:0 0 10px 0}
+.subtitle{margin:0 0 24px 0;color:var(--muted)}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:var(--shadow);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);margin:16px 0}
+.card h2{margin-top:0;font-size:1.2rem}
+.list{margin:0;padding:0;list-style:none}
+.list li{padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,0.03);margin:10px 0}
+a{color:var(--accent);text-decoration:underline;text-decoration-style:dotted}
+footer{margin-top:28px;color:var(--muted);font-size:.85rem}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}

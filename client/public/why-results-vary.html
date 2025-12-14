@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Why Results May Vary - Speed Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/theme.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Why Results May Vary</h1>
+    <p class="subtitle">Understanding fluctuations helps you compare tests fairly.</p>
+
+    <div class="card">
+      <h2>Core Causes</h2>
+      <ul class="list">
+        <li><strong>Server Location:</strong> Further distance increases latency and reduces sustained throughput.</li>
+        <li><strong>Parallelism:</strong> Fast links often need multiple streams; we adaptively scale concurrency.</li>
+        <li><strong>Browser Limits:</strong> Connection caps and scheduling can throttle peak speeds.</li>
+        <li><strong>Network Load:</strong> Competing devices/apps consume bandwidth during the test.</li>
+        <li><strong>Wi‑Fi Quality:</strong> Interference and signal strength impact performance versus Ethernet.</li>
+        <li><strong>ISP Routing:</strong> Peering paths differ across CDNs and can bias results.</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Consistency Tips</h2>
+        <ul class="list">
+          <li>Run 2–3 tests and take the median.</li>
+          <li>Close heavy downloads/uploads first.</li>
+          <li>Prefer 5 GHz Wi‑Fi or Ethernet.</li>
+          <li>Keep the device near the router.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Compare Fairly</h2>
+        <p>Use the same device + browser for different speed sites. If another tool shows higher numbers, check if it is using a closer server or more streams.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Adaptive Concurrency</h2>
+      <p>The test starts with fewer streams and increases them when growth plateaus, helping reach saturation without wasting excess data.</p>
+    </div>
+
+    <footer>&copy; <span id="year"></span> Speed Test · <a href="/privacy.html">Privacy Policy</a></footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
