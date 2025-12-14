@@ -1,7 +1,11 @@
 {
-  "name": "speed-test-backend",
+  "name": "@surja2003/speed-test-backend",
   "version": "1.0.0",
   "description": "Backend server for speed test app",
+  "repository": "https://github.com/Surja2003/SpeedTest.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",

@@ -1,7 +1,11 @@
 {
-  "name": "speed-test-client",
+  "name": "@surja2003/speed-test-client",
   "version": "1.0.0",
   "type": "module",
+  "repository": "https://github.com/Surja2003/SpeedTest.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
